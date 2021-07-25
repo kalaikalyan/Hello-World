@@ -1,0 +1,90 @@
+---
+title: "assignment_05_KalyanKalai"
+author: Kalaivani Kalyanasundaram
+date: '2021-07-25'
+output: word_document
+---
+
+
+# As a data science intern with newly learned knowledge in skills in statistical correlation and R programming, you will analyze the results of a survey recently given to college students. You learn that the research question being investigated is: “Is there a significant relationship between the amount of time spent reading and the time spent watching television?” You are also interested if there are other significant relationships that can be discovered? The survey data is located in this StudentSurvey.csv file.
+
+
+
+## Use R to calculate the covariance of the Survey variables and provide an explanation of why you would use this calculation and what the results indicate.
+```{r include=TRUE}
+
+setwd("/Users/kalya/Documents/Kalai/dsc520")
+students_df <- read.csv("data/student-survey.csv")
+cov(students_df$TimeTV,students_df$TimeReading)
+cov(students_df$Happiness,students_df$Gender)
+```
+
+I would use the covariance between TimeTV and TimeReading to see if there is a correlation/relationship between watching tv and reading time as the question prompts. Also, looking at gender and happiness, I can check if there are any other factors in play here in this question
+
+
+
+## Examine the Survey data variables. What measurement is being used for the variables? Explain what effect changing the measurement being used for the variables would have on the covariance calculation. Would this be a problem? Explain and provide a better alternative if needed.
+
+* TimeTV(minutes)
+* TimeReading(hours)
+* Happiness(Percentage)
+* Gender (Binary)
+Changing the measurment will change the covariance value but it will still not change the strength of the relationship so as a whole, the relationship will stay the same but it wil change the covariance value. I do think a better approach is using similar units for both like minutes or hours. 
+
+
+
+## Choose the type of correlation test to perform, explain why you chose this test, and make a prediction if the test yields a positive or negative correlation?
+
+I will be doing a Pearson's correlation test. I believe this test wil show that there is some sort of relationhip between TimeReading and TimeTV. I predict that there is a negative correlation because people would rather watch TV than read.
+
+## Perform a correlation analysis of: 
+
+### All variables
+```{r include=TRUE}
+library(Hmisc)
+setwd("/Users/kalya/Documents/Kalai/dsc520")
+students_df <- read.csv("data/student-survey.csv")
+rcorr(as.matrix(students_df))
+```
+### A single correlation between two a pair of the variables
+```{r include=TRUE}
+library(Hmisc)
+setwd("/Users/kalya/Documents/Kalai/dsc520")
+students_df <- read.csv("data/student-survey.csv")
+cor.test(students_df$TimeReading,students_df$TimeTV)
+```
+### Repeat your correlation test in step 2 but set the confidence interval at 99%
+```{r include=TRUE}
+library(Hmisc)
+setwd("/Users/kalya/Documents/Kalai/dsc520")
+students_df <- read.csv("data/student-survey.csv")
+cor.test(students_df$TimeReading,students_df$TimeTV, conf.level = .99)
+```
+### Describe what the calculations in the correlation matrix suggest about the relationship between the variables. Be specific with your explanation.
+Based on the different confidence levels, I am 99% confident that there is a negative correlation between time spent watching Tv and time spent reading because the cor value is negative and the confidence intervals are all negative (below 0). There seems to be a negative relationship between TimeTV and TimeReading.
+
+
+
+## Calculate the correlation coefficient and the coefficient of determination, describe what you conclude about the results.
+
+```{r include=TRUE}
+setwd("/Users/kalya/Documents/Kalai/dsc520")
+students_df <- read.csv("data/student-survey.csv")
+cor(students_df$TimeReading,students_df$TimeTV)
+lm <- lm(students_df)
+summary(lm)$r.squared
+```
+Based on the negative correlation coefficient and the coefficient of determinination, I conclude there is a negative correlation between TV use and reading. The coefficient of determination vale proves that around 80% of the data fit the regression model which is a strong fit.
+
+
+
+## Based on your analysis can you say that watching more TV caused students to read less? Explain. Pick three variables and perform a partial correlation, documenting which variable you are “controlling”. Explain how this changes your interpretation and explanation of the results.
+
+Athough there is a negative correlation, you cannot say that is the cause because correlation doesn't mean causation. 
+```{r include=TRUE}
+library(ppcor)
+setwd("/Users/kalya/Documents/Kalai/dsc520")
+students_df <- read.csv("data/student-survey.csv")
+pcor(students_df)
+```
+This shows another side of the data, where the correlation doesn't necessarily have to be negative. There are certainly other factors in play so we can reiterate that correlation does not result in causation.
