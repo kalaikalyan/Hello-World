@@ -8,7 +8,9 @@ output: word_document
 
 # As a data science intern with newly learned knowledge in skills in statistical correlation and R programming, you will analyze the results of a survey recently given to college students. You learn that the research question being investigated is: “Is there a significant relationship between the amount of time spent reading and the time spent watching television?” You are also interested if there are other significant relationships that can be discovered? The survey data is located in this StudentSurvey.csv file.
 
+## Github link
 
+https://github.com/kalaikalyan/hello-world
 
 ## Use R to calculate the covariance of the Survey variables and provide an explanation of why you would use this calculation and what the results indicate.
 ```{r include=TRUE}
