@@ -1,0 +1,66 @@
+---
+title: "KalaivaniKalyanFinalProjectStep1"
+author: "Kalaivani Kalyanasundaram"
+date: "8/1/2021"
+output: word_document
+---
+
+# Why is Vaccination important?
+
+## Github link
+
+https://github.com/kalaikalyan/hello-world
+
+
+
+## Introduction
+
+Vaccination is really important to fight the pandemic and to get back to normal lifestyle. It helps the economy and the businesses affected during pandemic back to life.
+
+## Research questions
+
+1.	Role of Vaccination on air travel during Pandemic?
+2.	Effect of Pandemic on student’s mental health?
+3.	Did crimes increase due to pandemic and were the criminals      vaccinated?
+4.	Unemployment rate during the pandemic?
+5.	Work from Home Vs Back to office after Vaccination?
+6.	What is the Vaccination rate?
+7.  What percent of the US population is Vaccinated?
+
+## Approach
+
+Since Vaccination is so important to return to our natural lifestyle, I would like to study the effectiveness of Vaccines on health care workers.Using this knowledge, I will explore the issue deeper using the skills I have learned to analyse the data and form an opinion on the question.
+
+
+## How your approach addresses (fully or partially) the problem.
+
+Throughout the COVID-19 pandemic, health care personnel have been at high risk for exposure to SARS-CoV-2, the virus that causes COVID-19, through patient interactions and community exposure . The Advisory Committee on Immunization Practices recommended prioritization of HCP for COVID-19 vaccination to maintain provision of critical services and reduce spread of infection in health care settings based on the sources. Early distribution of two mRNA COVID-19 vaccines (Pfizer-BioNTech and Moderna) to HCP allowed assessment of the effectiveness of these vaccines in a real-world setting. A test-negative case-control study is underway to evaluate mRNA COVID-19 vaccine effectiveness (VE) against symptomatic illness among HCP at 33 U.S. sites across 25 U.S. states. Interim analyses indicated that the VE of a single dose (measured 14 days after the first dose through 6 days after the second dose) was 82%, adjusted for age, race/ethnicity, and underlying medical conditions. The adjusted VE of 2 doses (measured ≥7 days after the second dose) was 94% (95% CI = 87%–97%). VE of partial (1-dose) and complete (2-dose) vaccination in this population is comparable to that reported from clinical trials and recent observational studies, supporting the effectiveness of mRNA COVID-19 vaccines against symptomatic disease in adults, with strong 2-dose protection. All this information shows how my approach can educate me well enough to analyse the data and come to a conclusion.
+
+## Data  (Minimum of 3 Datasets - but no requirement on number of fields or rows)
+
+https://www.cdc.gov/mmwr/volumes/70/wr/mm7020e2.htm#T1_down
+As of March 18, 2021, 623 case-patients and 1,220 controls had been enrolled. The median ages of case-patients and controls were 38 years (range = 19–69 years) and 37 years (range = 19–76 years), respectively (Table 1)
+https://www.cdc.gov/mmwr/volumes/70/wr/mm7020e2.htm#T2_down
+Ten percent of case-patients and 20% of controls had received 1 dose of COVID-19 vaccine ≥14 days before the test date, and 3% of case-patients and 15% of controls had received 2 doses ≥7 days before the test date (Table 2).
+https://www.cdc.gov/coronavirus/2019-ncov/science/science-briefs/underlying-evidence-table.html
+Evidence used to inform the list of underlying medical conditions that increase a person’s risk of severe illness from COVID-19. In alphabetic order by section.
+
+
+## Required Packages
+
+```{r include=TRUE}
+library(ggplot2)
+library(readxl)
+library(knitr)
+library(car)
+```
+
+## Plots and Table Needs
+
+I will provide tables and histograms based on vaccinated population and unvaccinated population. The difference in spread and infection of COVID 19 based on these two groups. I will look for majot differences to highlight it through my plots and tables. I added some sample tables in the citations section if you want to check it out.
+
+## Questions for future steps
+
+* How the Interim Estimates of Vaccine Effectiveness of Pfizer-BioNTech and Moderna COVID-19 Vaccines Among Health Care  Personnel helped in the effective vaccination of general public?
+* How far the Vaccination is effective against different variants?
+* How Vaccinations helps with the hospitalization rate if we get covid?
