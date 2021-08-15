@@ -1,0 +1,59 @@
+---
+title: "DSC520-FinalPart"
+author: "Kalaivani Kalyanasundaram"
+date: "8/14/2021"
+output: word_document
+---
+
+# Final Project Step 3
+
+## Github link
+
+https://github.com/kalaikalyan/hello-world
+
+## Introduction
+The data is about the importance of vaccination to fight against the Covid pandemic. The data provides insights of total number of vaccinations, deaths due to co-vid and unvaccinated population/age group among the deaths reported  in a particular state. Number of deaths reported among unvaccinated vs Vaccinated population predicts the importance of Vaccination. 
+
+## Problem statement addressed:
+
+### Do Vaccinations truly help? Most importantly, are vaccines important?
+
+The data in Step 2 showed the total number vaccinations done in our state and if we dig into it further like number of hospitalizations and deaths in the state, it will provide us with the comparison of Vaccinated Vs  Unvaccinated people among hospitalizations and deaths. This will help us get a glimpse at the problem and come t a conclusion.
+
+## How you addressed this problem statement
+
+Created  charts and visualizations on the vaccination data for the state of Nebraska.I tried to create visuals to aid with the understanding of Covid cases. I used histograms and other representations of the data to show the power of vaccincations.
+
+Statewide Vaccine Breakthroughs (01/01/2021 – 07/31/2021)
+•	44,246 Cases – Not Fully Vaccinated
+•	1,616 Cases – Fully Vaccinated
+•	2,235 Hospitalizations - Not Fully Vaccinated
+•	79 Hospitalizations – Fully Vaccinated
+•	729 Deaths - Not Fully Vaccinated
+•	17 Deaths – Fully Vaccinated
+ 
+ 
+
+As of now the data and Visualizations shows more than 90% of deaths and hospitalizations are among the Unvaccinated population.
+
+## Analysis
+
+I can view the relationship between different variables and its effect, mainly vaccinations. Most specifically, I learned about the relationship between covid vaccinations and covid deaths in the similar time frame. The data shows that there is a clear negative relationship in the fact that more vaccinated population, less covid cases. Therefore, I think the vaccines are effective and need to be used to protect ourselves from the pandemic.
+
+## Implications
+
+Some people with pre -existing   conditions (pregnancy) and kids under 12 years of age are still not ready for vaccination. Lot of study and research is under way. Also effects of  blood clots on some people after vaccination is also studied side by side. Therefore, if you are able to get the vaccination by meeting the required criteria, pleas take the vaccination to protext the whole world from the pandemic. 
+
+## Limitations
+
+Does that mean fully vaccinated people are fully protected?
+No. People that are fully vaccinated can contract the coronavirus and as well transmit the disease. It does decrease the severity as well as the hospitalizations. It also helps with the recovery time and decreases the death rate. Also as of now we don’t know how long the vaccine is effective or may need a booster shot soon.
+
+## Conclusion Remarks
+
+My analysis on the data surely shows positive trend on Vaccinations do protect people from getting affected with coronavirus and as well as hospitalizations. Also more people get vaccinated creates a better immunity to battle the pandemic. In the future, more data can be used to analyze the space more an come up with better figures than I have to illustrate the importance of covid vaccines. In conclusion, try to get vaccinated if you meet the requirements and stay safe!
+
+
+
+
+
